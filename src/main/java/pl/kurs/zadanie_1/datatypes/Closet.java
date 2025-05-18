@@ -1,6 +1,6 @@
-package pl.kurs.zadanie_1.services;
+package pl.kurs.zadanie_1.datatypes;
 
-import pl.kurs.zadanie_1.datatypes.Clothing;
+import pl.kurs.zadanie_1.services.Clothing;
 
 import java.io.*;
 import java.util.ArrayList;
