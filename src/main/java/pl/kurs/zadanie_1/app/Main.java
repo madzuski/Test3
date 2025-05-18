@@ -1,6 +1,5 @@
 package pl.kurs.zadanie_1.app;
 
-
 import pl.kurs.zadanie_1.datatypes.*;
 
 import java.io.IOException;
