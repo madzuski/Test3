@@ -1,6 +1,7 @@
 package pl.kurs.zadanie_1.app;
 
 import pl.kurs.zadanie_1.datatypes.*;
+import pl.kurs.zadanie_1.services.Closet;
 
 import java.io.IOException;
 import java.util.Collections;
