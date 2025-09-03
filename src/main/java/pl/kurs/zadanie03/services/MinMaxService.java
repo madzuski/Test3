@@ -8,7 +8,10 @@ import java.util.List;
 
 public class MinMaxService {
 
-    public static <T extends Comparable<T>> MinMax<T> getMinAndMax(List<T> elements){ //(12, 425, 343, 2, 94, 345, null
+    public static <T extends Comparable<T>> MinMax<T> getMinAndMax(List<T> elements){ //(12, 425, 343, 2, 94, 345, null)
+        if (elements == null) {
+            elements = Collections.emptyList();
+        }
         List<T> tmpList = new ArrayList<>();
         for (T element : elements) {
             if (element != null) {
@@ -16,7 +19,9 @@ public class MinMaxService {
             }
         }
         Collections.sort(tmpList);
+        if (tmpList.isEmpty()) {
+            return new MinMax<>(null,null);
+        }
         return new MinMax<>(tmpList.get(0), tmpList.get(tmpList.size() - 1));
-
     }
 }

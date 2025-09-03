@@ -31,8 +31,8 @@ public class Main {
 
         //wklejony wynik w komentarz:
 //        MONDAY->78
-//        TUESDAY->743
-//        WEDNESDAY->4915
+//        TUESDAY->148
+//        WEDNESDAY->164
 //        THURSDAY->72
 //        FRIDAY->38
 //        SATURDAY->300

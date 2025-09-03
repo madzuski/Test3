@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class MinMax<T extends Comparable<T>> implements Serializable {
     private static final long serialVersionUID = 1L;
-    private T min;
-    private T max;
+    private final T min;
+    private final T max;
 
     public MinMax(T min, T max) {
         this.min = min;
@@ -30,16 +30,8 @@ public class MinMax<T extends Comparable<T>> implements Serializable {
         return min;
     }
 
-    public void setMin(T min) {
-        this.min = min;
-    }
-
     public T getMax() {
         return max;
-    }
-
-    public void setMax(T max) {
-        this.max = max;
     }
 
     @Override
