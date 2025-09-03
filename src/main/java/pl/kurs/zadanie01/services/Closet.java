@@ -1,6 +1,6 @@
-package pl.kurs.zadanie01.datatypes;
+package pl.kurs.zadanie01.services;
 
-import pl.kurs.zadanie01.services.Clothing;
+import pl.kurs.zadanie01.datatypes.Clothing;
 
 import java.io.EOFException;
 import java.io.FileInputStream;
