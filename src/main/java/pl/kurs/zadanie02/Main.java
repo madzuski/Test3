@@ -1,4 +1,4 @@
-package pl.kurs.zadanie_2;
+package pl.kurs.zadanie02;
 
 import java.io.File;
 import java.io.IOException;

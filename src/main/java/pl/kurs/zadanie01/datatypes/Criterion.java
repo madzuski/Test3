@@ -1,4 +1,4 @@
-package pl.kurs.zadanie_1.datatypes;
+package pl.kurs.zadanie01.datatypes;
 
 public enum Criterion {
     SIZE,

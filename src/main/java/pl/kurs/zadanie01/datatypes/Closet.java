@@ -1,8 +1,11 @@
-package pl.kurs.zadanie_1.datatypes;
+package pl.kurs.zadanie01.datatypes;
 
-import pl.kurs.zadanie_1.services.Clothing;
+import pl.kurs.zadanie01.services.Clothing;
 
-import java.io.*;
+import java.io.EOFException;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,15 +54,33 @@ public class Closet implements Iterable<Clothing> {
         return clothes;
     }
 
-    public void saveToFile(String filename) throws IOException {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
-            Node current = head;
-            while (current != null) {
-                oos.writeObject(current.clothing);
-                current = current.next;
-            }
-        }
-    }
+//    public void saveToFile(String filename) {
+////        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
+////            Node current = head;
+////            while (current != null) {
+////                oos.writeObject(current.clothing);
+////                current = current.next;
+////            }
+////        }
+//
+//        try (
+//                BufferedWriter bw = new BufferedWriter(new FileWriter(filename))
+//                ){
+//            for (Clothing clothing : this) {
+//                bw.write(clothing.getData());
+//                bw.newLine();
+//            }
+//
+//
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//    }
+
+
+
+
 
     public void loadFromFile(String filename) throws IOException, ClassNotFoundException {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {

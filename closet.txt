@@ -1,0 +1,3 @@
+Shirt,Blue Shirt,M,29.99
+Shirt,Red Shirt,L,34.99
+Jeans,Blue Jeans,S,49.99
