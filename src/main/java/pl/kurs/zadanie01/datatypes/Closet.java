@@ -54,34 +54,6 @@ public class Closet implements Iterable<Clothing> {
         return clothes;
     }
 
-//    public void saveToFile(String filename) {
-////        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
-////            Node current = head;
-////            while (current != null) {
-////                oos.writeObject(current.clothing);
-////                current = current.next;
-////            }
-////        }
-//
-//        try (
-//                BufferedWriter bw = new BufferedWriter(new FileWriter(filename))
-//                ){
-//            for (Clothing clothing : this) {
-//                bw.write(clothing.getData());
-//                bw.newLine();
-//            }
-//
-//
-//        } catch (IOException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//    }
-
-
-
-
-
     public void loadFromFile(String filename) throws IOException, ClassNotFoundException {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
             head = null;

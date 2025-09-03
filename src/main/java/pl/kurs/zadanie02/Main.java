@@ -30,13 +30,13 @@ public class Main {
         printSummary(myJavaFiles);
 
         //wklejony wynik w komentarz:
-//        MONDAY->75
-//        TUESDAY->147
-//        WEDNESDAY->4909
+//        MONDAY->78
+//        TUESDAY->743
+//        WEDNESDAY->4915
 //        THURSDAY->72
-//        FRIDAY->35
+//        FRIDAY->38
 //        SATURDAY->300
-//        SUNDAY->46
+//        SUNDAY->59
 
     }
 

@@ -35,17 +35,17 @@ public class Main {
         System.out.println("Most expensive clothing: " + mostExpensive);
 
 
-        Clothing.saveClothesToFile(closet,"closet.txt");
+        Clothing.saveClothesToFile(closet, "closet.txt");
 
-            try {
-                List<Clothing> clothing = Clothing.readClothesFromFile("closet.txt");
-                for (Clothing c : clothing) {
-                    System.out.println(c);
-                }
+        try {
+            List<Clothing> clothing = Clothing.readClothesFromFile("closet.txt");
+            for (Clothing c : clothing) {
+                System.out.println(c);
+            }
 
-            } catch (IOException e) {
-                throw new RuntimeException(e);            }
-
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 } 
